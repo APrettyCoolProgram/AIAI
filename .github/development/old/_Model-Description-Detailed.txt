@@ -1,0 +1,97 @@
+======
+261112
+======
+
+--------------
+Initial prompt
+--------------
+
+I'm a software engineer that would like to start incorporating AI into my 
+workflow.
+
+My current workflow includes:
+
+- Writing software in C# using both .NET 10 and the .NET Framework 4.8
+- Continuously refactoring to keep technical debt at a minimum
+- Creating technical documentation/manuals for the software I write
+- Occasionally experimenting with vibe-coding weird ideas
+- Ensuring that my code repositories are clean and well organized.
+
+This is the current list of models that I have available:
+
+- GPT‑5.3‑Codex
+- GPT‑5.4 nano 1
+- GPT‑5.6 Luna
+- GPT‑5.6 Sol
+- GPT‑5.6 Terra
+- GPT‑6 Astra
+- GPT‑6 Luna
+- GPT‑6 Sol
+- GPT‑6.1 Sol
+- GPT‑6.1 Terra
+- Claude Fable 5
+- Claude Fable 5.1
+- Claude Haiku 4.5
+- Claude Haiku 5.5
+- Claude Opus 4.8
+- Claude Opus 4.8 (fast mode)
+- Claude Opus 5
+- Claude Opus 5.5
+- Claude Sonnet 4.6
+- Claude Sonnet 5
+- Claude Sonnet 5.5
+- Gemini 3.8 Flash
+- Gemini 4 Argon
+- MAI‑Code‑1.1‑Flash
+- Kimi K3
+- Grok 4.5
+- Grok 4.6
+- Grok 4.7
+
+Create a document named \`Model-Description.md\` that gives a brief
+description of each model, and their primary use case.
+
+If there are multiple \*versions\* of a model with the same
+name (e.g., Claude Sonnet 4.6/5/5.5"), only include the best recommendation.
+
+If there are models versions with
+multiple \*names\* (e.g., "GPT-6 Astra/Luna/Sol"), include all named versions.
+
+--------
+Response
+--------
+
+I'll organize the document around your software-engineering workflow,
+with particular emphasis on:
+
+- C# development across .NET 10 and .NET Framework 4.8.
+- Code reviews, refactoring, and technical-debt reduction.
+- Technical documentation and architecture diagrams.
+- Experimental development and vibe-coding.
+- Repository maintenance and organization.
+
+I'll retain every distinct named model variant, but select only the
+strongest version within model families that have multiple numbered releases.
+
+One important distinction: some names in your list appear to be
+provider-specific model aliases or internal variant names rather
+than publicly documented model identifiers. I'll flag those rather
+than inventing capabilities or treating their names as verified
+specifications.
+
+Model-Description.md created successfully.
+
+The document includes:
+
+- Descriptions and primary use cases.
+- Recommended models for each of your engineering activities.
+- Duplicate-version filtering.
+- A practical model-selection workflow.
+- Specific considerations for .NET 10 versus .NET Framework 4.8.
+
+My initial recommendation: Start by evaluating GPT-5.3-Codex, Claude Sonnet 5.5,
+and Claude Opus 5.5 as your primary engineering models.
+
+A useful next step would be to create a standardized set of C# coding,
+refactoring, and documentation tasks to benchmark these models against
+your actual projects.
