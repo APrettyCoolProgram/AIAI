@@ -1,0 +1,39 @@
+======
+261112
+======
+
+--------------
+Initial prompt
+--------------
+
+When using AI, it's important to me that I'm using the correct and
+most effcient model for the task at hand. I don't mind switching
+between different models when needed.
+
+Create a document named `Model-Suggestion.md` that suggests
+the 5 models I should have in my workflow toolbox.
+
+========
+Response
+========
+
+Created `Model-Suggestion.md` with a recommended five-model toolbox,
+organized around distinct roles:
+
+| Model             | Primary role                                                 |
+| ----------------- | ------------------------------------------------------------ |
+| GPT-5.3-Codex     | Multi-file coding and repository-level changes               |
+| Claude Sonnet 5.5 | Everyday C# development, refactoring, and documentation      |
+| Claude Opus 5.5   | Complex reasoning, difficult debugging, and critical reviews |
+| Claude Haiku 5.5  | Fast, lightweight tasks                                      |
+| Kimi K3           | Independent second opinions and alternative approaches       |
+
+The document also includes a task-to-model recommendation table, a
+practical switching strategy, .NET-specific guidance, and criteria
+for evaluating whether each model earns its place in your workflow.
+
+Download Model-Suggestion.md
+
+The central recommendation is to use Sonnet as your everyday default,
+switch to Codex for repository-heavy coding, and reserve Opus for the
+problems that genuinely need deeper reasoning.
