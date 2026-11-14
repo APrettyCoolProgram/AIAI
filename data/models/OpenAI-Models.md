@@ -1,6 +1,7 @@
+<-- Last updated 261114 -->
 # OpenAI Models
 
-> **Last verified:** November 12, 2026
+> **Last verified:** November 14, 2026
 > **Primary sources:** [OpenAI model catalog](https://developers.openai.com/api/docs/models), [OpenAI deprecations](https://developers.openai.com/api/docs/deprecations), plus third-party aggregators where noted.
 > **Pricing caveat:** OpenAI changed GPT-5.6 prices on July 30, 2026. Figures below use the most recent reported rates. Confirm against the [OpenAI pricing page](https://developers.openai.com/api/docs/pricing) before budgeting.
 
@@ -16,7 +17,7 @@
 | **GPT-6 Luna** | Efficient | Active | 1.05M | 128K | $0.10 | $0.50 | High-volume, focused tasks |
 | **GPT-6 Sol** | Flagship (alias) | Active | 1.05M | 128K | see note | see note | Routes to GPT-6.1 Sol (see below) |
 | **GPT-5.6 Sol** | Flagship | Active | 1.05M | 128K | $4.00 | $20.00 | Agentic coding, long-horizon work |
-| **GPT-5.6 Terra** | Balanced | Active | 1.05M | 128K | $2.00 | $12.00 | Everyday engineering tasks |
+| **GPT-5.6 Terra** | Balanced | Deprecated in Copilot Nov 16, 2026 | 1.05M | 128K | $2.00 | $12.00 | Everyday engineering tasks |
 | **GPT-5.6 Luna** | Efficient | Active | 1.05M | 128K | $0.20 | $1.20 | Cheap, high-volume automation |
 | **GPT-5.3-Codex** | Coding agent | **Deprecated** | 400K | n/a | n/a | n/a | Shuts down April 1, 2027 |
 | **GPT-5.4 nano** | Small | **Deprecated** | n/a | n/a | ~$0.20 | ~$1.25 | Shuts down April 1, 2027 |

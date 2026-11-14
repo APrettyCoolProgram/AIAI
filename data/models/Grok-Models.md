@@ -1,6 +1,7 @@
+<-- Last updated 261114 -->
 # xAI Grok Models
 
-> **Last verified:** November 12, 2026
+> **Last verified:** November 14, 2026
 > **Primary source:** [xAI model documentation](https://docs.x.ai/developers/models)
 > **Pricing caveat:** Third-party aggregators disagree on Grok 4.7 pricing. The figures below show both. Check [docs.x.ai](https://docs.x.ai/developers/models) before budgeting.
 
@@ -12,7 +13,7 @@
 |---|---|---|---|---|---|---|---|
 | **Grok 4.7** | Active | 500K | Sept 21, 2026 | $1.60 to $2.00 (see note) | $4.80 to $6.00 (see note) | ~May to June 2026 | Coding, agentic tasks, knowledge work |
 | **Grok 4.6** | Active | 500K | (earlier 2026) | Not verified | Not verified | January 2026 | Earlier frontier coding model |
-| **Grok 4.5** | Active | 500K | (early 2026) | $2.00 | $6.00 | February 2026 | Coding, knowledge work, STEM |
+| **Grok 4.5** | Deprecated in Copilot Oct 19, 2026 (unverified) | 500K | (early 2026) | $2.00 | $6.00 | February 2026 | Coding, knowledge work, STEM |
 
 ---
 

@@ -8,7 +8,7 @@
   ![RELEASE](https://img.shields.io/badge/November_2026-teal)&nbsp;
 
   [Workflow](workflow.md)  
-  [Models](models.md)  
+  [Models](model-reference.md)  
   [Agents](./data/agents/)
 
 </div>
