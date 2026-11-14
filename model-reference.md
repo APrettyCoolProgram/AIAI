@@ -12,8 +12,6 @@
 | Vibe-coding experiments | Kimi K3 | Gemini 3.8 Flash | MAI-Code-1.1-Flash |
 | Analysis of a whole solution in one prompt | Claude Opus 5.5 | Kimi K3 | Gemini 3.8 Flash |
 
-High, Medium, and Low list the most expensive, middle, and least expensive models in each row, by Cost rating. Ties are joined with "or". "—" means no model fills that position.
-
 ---
 
 ## Models
@@ -48,8 +46,6 @@ High, Medium, and Low list the most expensive, middle, and least expensive model
 | [Grok 4.5](data/models/Grok-Models.md) | xAI | 500K | $2 | $6 | 6 | Earlier Grok for coding and STEM; deprecated in Copilot Oct 19, 2026 (unverified) |
 | [MAI-Code-1.1-Flash](data/models/Microsoft-MAI-Models.md) | Microsoft | 256K | $0.20 | $1.20 | 3 | Low-cost coding model in GitHub Copilot |
 | [Kimi K3](data/models/Moonshot-Models.md) | Moonshot | 1M | $3 | $15 | 7 | Open-weight, 1M-context model for long agentic tasks |
-
-Cost is rated from input plus output price per 1M tokens, on a log scale from the cheapest model ("Lowest") to the most expensive ("Highest"). "—" means no usable price. These are provider API prices, not GitHub Copilot request multipliers.
 
 <br>
 
