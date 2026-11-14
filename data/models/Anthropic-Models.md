@@ -1,6 +1,7 @@
+<-- Last updated 261114 -->
 # Anthropic Claude Models
 
-> **Last verified:** November 12, 2026
+> **Last verified:** November 14, 2026
 > **Primary source:** [Claude Platform models overview](https://platform.claude.com/docs/en/data/models/overview)
 > **Model IDs** shown are the API strings. Use them exactly as written.
 
@@ -16,10 +17,10 @@
 | **Claude Haiku 5.5** | Haiku | `claude-haiku-5-5` | 1M | 128K | from $0.10 | from $0.50 | Fastest | Classification, extraction, routing, high volume |
 | Claude Fable 5.1 | Fable | `claude-fable-5-1` | 1M | 128K | $10 | $50 | Moderate | Previous Fable generation |
 | Claude Fable 5 | Fable | `claude-fable-5` | 1M | 128K | $10 | $50 | Moderate | See availability note below |
-| Claude Opus 5 | Opus | `claude-opus-5` | 1M | 128K | $5 | $25 | Moderate | Previous Opus generation |
-| Claude Opus 4.8 | Opus | `claude-opus-4-8` | 1M | 128K | $5 | $25 | Moderate | Stable, widely used |
+| Claude Opus 5 | Opus | `claude-opus-5` | 1M | 128K | $5 | $25 | Moderate | Previous Opus generation; deprecated in Copilot Nov 16, 2026 |
+| Claude Opus 4.8 | Opus | `claude-opus-4-8` | 1M | 128K | $5 | $25 | Moderate | Stable, widely used; deprecated in Copilot Nov 16, 2026 (annual individual plans excepted) |
 | Claude Sonnet 5 | Sonnet | `claude-sonnet-5` | 1M | 128K | $2 | $10 | Fast | Previous Sonnet generation |
-| Claude Sonnet 4.6 | Sonnet | `claude-sonnet-4-6` | 1M | 128K | $3 | $15 | Fast | Older, pricier than Sonnet 5 |
+| Claude Sonnet 4.6 | Sonnet | `claude-sonnet-4-6` | 1M | 128K | $3 | $15 | Fast | Older, pricier than Sonnet 5; retired from Copilot Sep 1, 2026 (unverified) |
 | Claude Haiku 4.5 | Haiku | `claude-haiku-4-5` | 200K | 64K | $1 | $5 | Fast | Smaller context; legacy small model |
 
 ---
