@@ -175,13 +175,13 @@ Migration is the most expensive phase, so it benefits most from careful model ch
 
 | Task | Primary | Cheaper option | Escalate to | Reviewer or check |
 |---|---|---|---|---|
-| Plan or design | Claude Opus 5.5 | GPT-6.1 Sol | Claude Fable 5.2 | GPT-6.1 Sol |
-| Implement a feature (small) | Claude Sonnet 5.5 | GPT-6.1 Terra | Claude Opus 5.5 | Tests and build |
-| Implement a feature (large) | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Fable 5.2 | GPT-6.1 Sol |
-| Mechanical refactor | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | Compiler |
-| Design refactor | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Fable 5.2 | Tests and review |
+| Design | Claude Opus 5.5 | GPT-6.1 Sol | Claude Fable 5.2 | GPT-6.1 Sol |
+| Feature (small) | Claude Sonnet 5.5 | GPT-6.1 Terra | Claude Opus 5.5 | Tests and build |
+| Feature (large) | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Fable 5.2 | GPT-6.1 Sol |
+| Refactor (mechanical) | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | Compiler |
+| Refactor (design) | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Fable 5.2 | Tests and review |
 | Unit tests | GPT-6.1 Terra | Claude Sonnet 5.5 | GPT-6.1 Sol | Mutation testing |
-| XML docs (bulk) | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | `CS1591` build check |
+| XML docs | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | `CS1591` build check |
 | Code comments | Claude Sonnet 5.5 | Claude Haiku 5.5 | Claude Opus 5.5 | Human review |
 | User manual | Claude Opus 5.5 | GPT-6.1 Terra | GPT-6.1 Sol | Compile samples |
 | Code review | GPT-6.1 Sol | Gemini 3.8 Flash | Claude Opus 5.5 | Human for risky code |
