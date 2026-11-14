@@ -50,11 +50,11 @@ Search `workflow/workflow.md` for every model that was added, removed, deprecate
 
 Check the Mermaid diagrams, phase tables, the assignment matrix (section 4), the deprecation notes, the escalation ladder (section 5), the cost tiers (section 8), and the quick-start checklist.
 
-- If a model was removed or has shut down, replace it with another model from the same row of the matrix in section 4, preferring the Primary or Cheaper option, and update the matching diagram node and cost tier. If that replacement is also removed or has shut down, stop for that use case and flag it in the report. Do not chain to a further replacement.
+- If a model was removed or has shut down, replace it with another model from the same row of the matrix in section 4, preferring the Primary or Secondary option, and update the matching diagram node and cost tier. If that replacement is also removed or has shut down, stop for that use case and flag it in the report. Do not chain to a further replacement.
 - A deprecated model that has not shut down stays in its phases and matrix. Flag it in the report, and replace it only after it shuts down.
 - If a new model might suit a use case better, do not swap it in. List it as a suggestion in your report. These are judgment calls for me.
 - Do not change the principles or the overall structure.
-- If a row of the matrix in section 4 is added, removed, or changed, note it in the report so the Use cases table in `README.md` can be updated to match.
+- If a row of the matrix in section 4 is added, removed, or changed, note it in the report so the Model assignment matrix in `README.md` can be updated to match.
 - Keep the existing table formats. After editing, re-read each Mermaid diagram you changed and check the syntax: matching brackets, quoted labels, and valid arrows.
 - Set the "Last updated" line to today's date, only if this run changed the file.
 
@@ -66,7 +66,7 @@ Check the Mermaid diagrams, phase tables, the assignment matrix (section 4), the
 - For deprecated models, add the shutdown date to the summary. Remove models that have already shut down, and remove models that Copilot Pro no longer offers even if the provider still serves them.
 - Update context, prices, and summaries that have changed. Keep prices as $ per 1M tokens. Use "—" only for values that do not exist or were never found. Mark unconfirmed values "(unverified)" as described in Step 1.
 - Recalculate the Cost ratings when any price changes. Rate each model by input plus output price, from "Lowest" for the cheapest model to "Highest" for the most expensive, scaled on a log scale in between. Leave a model unrated ("—") if it has no usable price.
-- Copy the matrix from section 4 of `workflow/workflow.md` into the Use cases table in `README.md`, exactly, with the same columns. Replace the table only when the matrix changed. Otherwise leave it alone.
+- Copy the matrix from section 4 of `workflow/workflow.md` into the Model assignment matrix section of `README.md`, exactly, with the same column names and alignment. Replace the table only when the matrix changed. Otherwise leave it alone.
 - Set the "Last updated" line to today's date, only if this run changed the file.
 - Do not create files that links point to. Report any link in `README.md` whose target file does not exist.
 
@@ -75,8 +75,8 @@ Check the Mermaid diagrams, phase tables, the assignment matrix (section 4), the
 ## Step 5: Check consistency
 
 - Every model named in `workflow/workflow.md` is either in `README.md` or listed under the "Models not used in this workflow" list in `workflow/workflow.md` (section 4).
-- Every model named in the use-case table in `README.md` exists in the Models table.
-- The Use cases table in `README.md` matches the matrix in section 4 of `workflow/workflow.md`, row for row.
+- Every model named in the Model assignment matrix in `README.md` exists in the Models table.
+- The Model assignment matrix in `README.md` matches the matrix in section 4 of `workflow/workflow.md`, row for row, with the same column names and alignment.
 - The tiers in section 8 match `README.md`: every model named in a tier has a row in `README.md`, and every tier model appears in the assignment matrix (section 4) or the escalation ladder (section 5).
 - The escalation ladder in section 5 uses current models.
 - Each datasheet in `model/` matches `README.md` for context and prices.

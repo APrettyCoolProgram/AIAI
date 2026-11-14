@@ -173,8 +173,8 @@ Migration is the most expensive phase, so it benefits most from careful model ch
 
 ## 4. Model assignment matrix
 
-| Task | Primary | Cheaper option | Escalate to | Reviewer or check |
-|---|---|---|---|---|
+| Task | Primary | Secondary | Escalate | Review |
+|--:|---|---|---|---|
 | Design | Claude Opus 5.5 | GPT-6.1 Sol | Claude Fable 5.2 | GPT-6.1 Sol |
 | Feature (small) | Claude Sonnet 5.5 | GPT-6.1 Terra | Claude Opus 5.5 | Tests and build |
 | Feature (large) | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Fable 5.2 | GPT-6.1 Sol |
@@ -189,7 +189,7 @@ Migration is the most expensive phase, so it benefits most from careful model ch
 | .NET Framework migration plan | Claude Opus 5.5 | GPT-6.1 Sol | Claude Fable 5.2 | Second model review |
 | Quick legacy fix | MAI-Code-1.1-Flash | Gemini 3.8 Flash | Claude Sonnet 5.5 | Tests |
 | Experiment | Gemini 3.8 Flash | MAI-Code-1.1-Flash | Kimi K3 | Spending cap |
-| Classification or routing (bots, tools) | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | Spot checks |
+| Classification or routing | Claude Haiku 5.5 | GPT-6 Luna | Claude Sonnet 5.5 | Spot checks |
 
 **Models not used in this workflow:**
 - **GPT-5.3-Codex and GPT-5.4 nano** are deprecated and shut down April 1, 2027.
