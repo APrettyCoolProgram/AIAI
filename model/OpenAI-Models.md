@@ -15,7 +15,7 @@
 | **GPT-6.1 Sol** | Balanced flagship | Active | 1.05M | 128K | $2.00 | $10.00 | Complex work at lower cost than Astra |
 | **GPT-6.1 Terra** | Fast/efficient | Active | 1.05M | 128K | $1.00 | $5.00 | Visual reasoning, computer use, writing |
 | **GPT-6 Luna** | Efficient | Active | 1.05M | 128K | $0.10 | $0.50 | High-volume, focused tasks |
-| **GPT-6 Sol** | Flagship (alias) | Active | 1.05M | 128K | see note | see note | Routes to GPT-6.1 Sol (see below) |
+| **GPT-6 Sol** | Flagship (alias) | Active; not on Copilot Pro | 1.05M | 128K | see note | see note | Routes to GPT-6.1 Sol (see below) |
 | **GPT-5.6 Sol** | Flagship | Active | 1.05M | 128K | $4.00 | $20.00 | Agentic coding, long-horizon work |
 | **GPT-5.6 Terra** | Balanced | Deprecated in Copilot Nov 16, 2026 | 1.05M | 128K | $2.00 | $12.00 | Everyday engineering tasks |
 | **GPT-5.6 Luna** | Efficient | Active | 1.05M | 128K | $0.20 | $1.20 | Cheap, high-volume automation |
@@ -153,7 +153,7 @@
 | Attribute | Value |
 |---|---|
 | Model ID | `gpt-6-sol` |
-| Status | Active; OpenAI's page redirects readers to GPT-6.1 Sol |
+| Status | Active; on GitHub Copilot for Pro+, Max, Business and Enterprise only (not Pro, per GitHub changelog, September 22, 2026). OpenAI's page redirects readers to GPT-6.1 Sol |
 | Pricing | Verify on pricing page; the GPT-6.1 Sol rate ($2/$10) is the current Sol-tier reference |
 
 **Note:** Treat `gpt-6-sol` as the Sol-tier entry point. OpenAI's own page points readers to GPT-6.1 Sol as the newer Sol model. OpenAI also names `gpt-6-sol` as the replacement for the deprecated GPT-5.3-Codex and GPT-5.1.

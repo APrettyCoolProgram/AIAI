@@ -1,3 +1,4 @@
+<-- Last updated 261114 -->
 <div align="center">
 
   <img src="./.github/logo/AIAI-448x672.png" alt="AIAI">
@@ -37,7 +38,6 @@
 | [GPT-6.1 Sol](model/OpenAI-Models.md) | OpenAI | 1.05M | $2 | $10 | 7 | Near-Astra capability at a lower price |
 | [GPT-6.1 Terra](model/OpenAI-Models.md) | OpenAI | 1.05M | $1 | $5 | 6 | Fast, efficient model for writing and computer use |
 | [GPT-6 Luna](model/OpenAI-Models.md) | OpenAI | 1.05M | $0.10 | $0.50 | Lowest | Cheapest GPT-6 model, for high-volume focused tasks |
-| [GPT-6 Sol](model/OpenAI-Models.md) | OpenAI | 1.05M | — | — | — | Alias that routes to GPT-6.1 Sol |
 | [GPT-5.6 Sol](model/OpenAI-Models.md) | OpenAI | 1.05M | $4 | $20 | 8 | Earlier flagship for agentic coding and long tasks |
 | [GPT-5.6 Terra](model/OpenAI-Models.md) | OpenAI | 1.05M | $2 | $12 | 7 | Earlier balanced tier for everyday engineering; deprecated in Copilot Nov 16, 2026 |
 | [GPT-5.6 Luna](model/OpenAI-Models.md) | OpenAI | 1.05M | $0.20 | $1.20 | 3 | Earlier low-cost tier for automation |
@@ -52,13 +52,12 @@
 | [Claude Opus 5](model/Anthropic-Models.md) | Anthropic | 1M | $5 | $25 | 8 | Earlier Opus generation; deprecated in Copilot Nov 16, 2026 |
 | [Claude Opus 4.8](model/Anthropic-Models.md) | Anthropic | 1M | $5 | $25 | 8 | Stable earlier Opus; fast-mode variant listed; deprecated in Copilot Nov 16, 2026 (annual individual plans excepted) |
 | [Claude Sonnet 5](model/Anthropic-Models.md) | Anthropic | 1M | $2 | $10 | 7 | Earlier Sonnet at the same price as 5.5 |
-| [Claude Sonnet 4.6](model/Anthropic-Models.md) | Anthropic | 1M | $3 | $15 | 7 | Older, pricier Sonnet; retired from Copilot Sep 1, 2026 (unverified) |
+| [Claude Sonnet 4.6](model/Anthropic-Models.md) | Anthropic | 1M | $3 | $15 | 7 | Older, pricier Sonnet; retired from Copilot Sep 1, 2026 (annual individual plans excepted) |
 | [Claude Haiku 4.5](model/Anthropic-Models.md) | Anthropic | 200K | $1 | $5 | 6 | Older small model with 200K context |
 | [Gemini 4 Argon](model/Google-Models.md) | Google | 1.05M (input + output) | — | — | — | Google's frontier model for deep, multi-domain work |
 | [Gemini 3.8 Flash](model/Google-Models.md) | Google | 1.05M | $0.75 (intro) | $3.75 (intro) | 5 | Fast, large-context model with multimodal input |
 | [Grok 4.7](model/Grok-Models.md) | xAI | 500K | $2 (sources differ) | $6 (sources differ) | 6 | Newest Grok; coding and agentic focus |
 | [Grok 4.6](model/Grok-Models.md) | xAI | 500K | — | — | — | Earlier Grok coding model |
-| [Grok 4.5](model/Grok-Models.md) | xAI | 500K | $2 | $6 | 6 | Earlier Grok for coding and STEM; deprecated in Copilot Oct 19, 2026 (unverified) |
 | [MAI-Code-1.1-Flash](model/Microsoft-MAI-Models.md) | Microsoft | 256K | $0.20 | $1.20 | 3 | Low-cost coding model in GitHub Copilot |
 | [Kimi K3](model/Moonshot-Models.md) | Moonshot | 1M | $3 | $15 | 7 | Open-weight, 1M-context model for long agentic tasks |
 

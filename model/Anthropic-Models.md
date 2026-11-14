@@ -20,7 +20,7 @@
 | Claude Opus 5 | Opus | `claude-opus-5` | 1M | 128K | $5 | $25 | Moderate | Previous Opus generation; deprecated in Copilot Nov 16, 2026 |
 | Claude Opus 4.8 | Opus | `claude-opus-4-8` | 1M | 128K | $5 | $25 | Moderate | Stable, widely used; deprecated in Copilot Nov 16, 2026 (annual individual plans excepted) |
 | Claude Sonnet 5 | Sonnet | `claude-sonnet-5` | 1M | 128K | $2 | $10 | Fast | Previous Sonnet generation |
-| Claude Sonnet 4.6 | Sonnet | `claude-sonnet-4-6` | 1M | 128K | $3 | $15 | Fast | Older, pricier than Sonnet 5; retired from Copilot Sep 1, 2026 (unverified) |
+| Claude Sonnet 4.6 | Sonnet | `claude-sonnet-4-6` | 1M | 128K | $3 | $15 | Fast | Older, pricier than Sonnet 5; retired from Copilot Sep 1, 2026 (annual individual plans excepted) |
 | Claude Haiku 4.5 | Haiku | `claude-haiku-4-5` | 200K | 64K | $1 | $5 | Fast | Smaller context; legacy small model |
 
 ---
