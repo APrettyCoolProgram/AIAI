@@ -12,8 +12,6 @@
 | Vibe-coding experiments | Kimi K3 | Gemini 3.8 Flash | MAI-Code-1.1-Flash |
 | Analysis of a whole solution in one prompt | Claude Opus 5.5 | Kimi K3 | Gemini 3.8 Flash |
 
----
-
 ## Models
 
 | Model | Provider | Context | Input $/1M | Output $/1M | Cost | Summary |
