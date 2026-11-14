@@ -50,7 +50,7 @@ Rules:
 - For deprecated models, add the shutdown date to the summary. Remove models that have already shut down, and remove models that Copilot Pro no longer offers even if the provider still serves them.
 - Update context, prices, and summaries that have changed. Keep prices as $ per 1M tokens. Use "—" only for values that do not exist or were never found. Mark unconfirmed values "(unverified)" as described in Step 1.
 - Recalculate the Cost ratings when any price changes. Rate each model by input plus output price, from "Lowest" for the cheapest model to "Highest" for the most expensive, scaled on a log scale in between. Leave a model unrated ("—") if it has no usable price.
-- In the use-case table, fill High, Medium, and Low from the Cost ratings of the models in each row. Recalculate a row only when a model in it was added, removed, or changed price. Otherwise leave it alone.
+- In the use-case table, fill High, Medium, and Low from the Cost ratings of the models in each row. Recalculate a row only when a model in it was added, removed, or changed price. Otherwise leave it alone. If I add a use-case row, pick its High, Medium, and Low models from the Models table that suit that use case, and list those picks in your report.
 - Set the "Last updated" line to today's date, only if this run changed the file.
 - Do not create files that links point to. Report any link in `model-reference.md` whose target file does not exist.
 

@@ -10,7 +10,9 @@
 | Bulk doc generation across a repo | MAI-Code-1.1-Flash | — | Claude Haiku 5.5 or GPT-6 Luna |
 | Repo hygiene and build scripting | Grok 4.7 | — | GPT-6.1 Terra |
 | Vibe-coding experiments | Kimi K3 | Gemini 3.8 Flash | MAI-Code-1.1-Flash |
-| Analysis of a whole solution in one prompt | Claude Opus 5.5 | Kimi K3 | Gemini 3.8 Flash |
+| Analysis of a code block | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Haiku 5.5 |
+| Analysis of class | Claude Opus 5.5 | Claude Sonnet 5.5 | GPT-6.1 Terra |
+| Analyze a solution | Claude Opus 5.5 | Kimi K3 | Gemini 3.8 Flash |
 
 ## Models
 
