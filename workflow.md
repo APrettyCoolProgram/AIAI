@@ -18,8 +18,6 @@
 | 4 | **Different model reviews the work.** | Models share blind spots. A second model catches errors the first one repeats. |
 | 5 | **Keep context small and fresh.** | Long sessions cost more and drift. Start a new session for each task. |
 
----
-
 ## 2. Workflow overview
 
 ```mermaid
@@ -39,8 +37,6 @@ flowchart TD
     J -->|"Approved"| K["Merge"]
     K --> L["Manuals and technical docs: Opus 5.5 or GPT-6.1 Terra"]
 ```
-
----
 
 ## 3. Phase by phase
 
@@ -175,8 +171,6 @@ Migration is the most expensive phase, so it benefits most from careful model ch
 | **Budget** | Set a spending cap per experiment |
 | **Rule** | Experiments live in a separate repository or branch. Nothing moves to production code without going through Sections 3.1 to 3.7. |
 
----
-
 ## 4. Model assignment matrix
 
 | Task | Primary | Cheaper option | Escalate to | Reviewer or check |
@@ -201,8 +195,6 @@ Migration is the most expensive phase, so it benefits most from careful model ch
 - **GPT-5.3-Codex and GPT-5.4 nano** are deprecated and shut down April 1, 2027.
 - **Claude Fable 5 and 5.1** are superseded by Fable 5.2 for new work.
 
----
-
 ## 5. Escalation ladder
 
 Escalate only after real failures, not because a task feels hard.
@@ -221,8 +213,6 @@ flowchart LR
 3. Before escalating, improve the input: add the failing test output, the relevant files, or a clearer spec. Escalation with a bad spec wastes money.
 4. If Tier 4 fails, the problem is probably in the spec, not the model.
 
----
-
 ## 6. Efficiency techniques
 
 | Technique | What to do | Where it helps |
@@ -236,8 +226,6 @@ flowchart LR
 | **Compiler first** | Run the build and analyzers before asking a model to review. | Every change |
 | **Cross-model review** | Use a different vendor to review plans, tests, and code. | Planning, testing, review |
 | **Cap experiments** | Set a monthly budget for vibe-coding and set up alerts. | Experiments |
-
----
 
 ## 7. Verification gates
 
@@ -255,8 +243,6 @@ Every phase has a gate. A change does not move forward until its gate passes.
 | Clean clone | CI on a fresh checkout | Before merge |
 | Human review | Security code, data access, public API changes | Before merge |
 
----
-
 ## 8. Cost tiers
 
 | Tier | Models | Typical use |
@@ -267,8 +253,6 @@ Every phase has a gate. A change does not move forward until its gate passes.
 | **Highest** | Claude Fable 5.2, GPT-6 Astra | Hard architecture, stuck problems after escalation |
 
 **Budget rule:** Most work should land in Low and Medium. Spending at the High tier should be deliberate, and Highest should be rare.
-
----
 
 ## 9. Handoff artifacts and session hygiene
 
@@ -311,8 +295,6 @@ Save each plan as `docs/specs/<feature-name>.md` in the repository:
 | Record the model used in the commit message or PR | Lets you compare results over time |
 | Do not paste secrets or credentials into any model | Applies to all providers |
 
----
-
 ## 10. Weekly review
 
 Track these numbers for a few weeks, then adjust the matrix in Section 4:
@@ -325,8 +307,6 @@ Track these numbers for a few weeks, then adjust the matrix in Section 4:
 | Defects found after merge, by model | Shows where review or tests are weak |
 
 If a task type escalates often, move its primary model up one tier. If it never escalates, try the cheaper option for a week.
-
----
 
 ## Appendix: Quick-start checklist
 
@@ -344,4 +324,4 @@ If a task type escalates often, move its primary model up one tier. If it never 
 
 ***
 
-> <sub>**Last updated:** November 12, 2026</sub>
+> <sub>**Last updated:** November 14, 2026</sub>

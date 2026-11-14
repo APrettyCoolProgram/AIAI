@@ -1,4 +1,3 @@
-<-- Last updated 261114 -->
 # AI Model Reference
 
 ## Use cases
@@ -20,7 +19,7 @@ High, Medium, and Low list the most expensive, middle, and least expensive model
 ## Models
 
 | Model | Provider | Context | Input $/1M | Output $/1M | Cost | Summary |
-|---|---|---|---|---|---|---|
+|-------|----------|:-------:|:----------:|:-----------:|:----:|---------|
 | [GPT-6 Astra](data/models/OpenAI-Models.md) | OpenAI | 1.05M | $10 | $50 | Highest | Most capable model for hard reasoning and coding |
 | [GPT-6.1 Sol](data/models/OpenAI-Models.md) | OpenAI | 1.05M | $2 | $10 | 7 | Near-Astra capability at a lower price |
 | [GPT-6.1 Terra](data/models/OpenAI-Models.md) | OpenAI | 1.05M | $1 | $5 | 6 | Fast, efficient model for writing and computer use |
