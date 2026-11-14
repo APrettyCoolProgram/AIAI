@@ -38,25 +38,13 @@ Rules:
 - For each model in the Step 1 results that has a datasheet, update its API ID, context window, input and output prices, status, shutdown date, and Copilot Pro availability where they changed. Keep the file's existing structure.
 - Add an entry for each new model to the existing datasheet file for its provider. If no file exists for the provider, report it instead of creating one.
 - For a model that has shut down, remove its entry only if the file has no legacy section for it. Otherwise report it.
-- Apply the same "(unverified)" and "—" rules as Step 1 and Step 3.
+- Apply the same "(unverified)" and "—" rules as Step 1 and Step 4.
 - Set the "Last verified" line in each changed file to today's date, only if this run changed that file.
 - Update the cross-provider table in `data/models/README.md` so it matches the datasheets, and set its "Last verified" line the same way. The datasheets are the source of truth for values. If `model-reference.md` or the README table disagrees with a datasheet, change them to match.
 
 ---
 
-## Step 3: Update `model-reference.md`
-
-- Add new models to the table under the correct provider, using the same column format and a one-line summary in the same style. Add a model only if GitHub Copilot Pro offers it.
-- For deprecated models, add the shutdown date to the summary. Remove models that have already shut down, and remove models that Copilot Pro no longer offers even if the provider still serves them.
-- Update context, prices, and summaries that have changed. Keep prices as $ per 1M tokens. Use "—" only for values that do not exist or were never found. Mark unconfirmed values "(unverified)" as described in Step 1.
-- Recalculate the Cost ratings when any price changes. Rate each model by input plus output price, from "Lowest" for the cheapest model to "Highest" for the most expensive, scaled on a log scale in between. Leave a model unrated ("—") if it has no usable price.
-- In the use-case table, fill High, Medium, and Low from the Cost ratings of the models in each row. Recalculate a row only when a model in it was added, removed, or changed price. Otherwise leave it alone. If I add a use-case row, pick its High, Medium, and Low models from the Models table that suit that use case, and list those picks in your report.
-- Set the "Last updated" line to today's date, only if this run changed the file.
-- Do not create files that links point to. Report any link in `model-reference.md` whose target file does not exist.
-
----
-
-## Step 4: Propagate changes to `workflow.md`
+## Step 3: Propagate changes to `workflow.md`
 
 Search `workflow.md` for every model that was added, removed, deprecated, or renamed. Search by family and version, not only by full name, because `workflow.md` uses short forms such as "Opus 5.5", "Sonnet 5.5", "Fable 5.2", "Haiku 5.5", and "GPT-6.1 Sol", including in the Mermaid diagrams.
 
@@ -66,8 +54,21 @@ Check the Mermaid diagrams, phase tables, the assignment matrix (section 4), the
 - A deprecated model that has not shut down stays in its phases and matrix. Flag it in the report, and replace it only after it shuts down.
 - If a new model might suit a use case better, do not swap it in. List it as a suggestion in your report. These are judgment calls for me.
 - Do not change the principles or the overall structure.
+- If a phase is added, removed, or renamed, note it in the report so the Use cases table in `model-reference.md` can be updated to match.
 - Keep the existing table formats. After editing, re-read each Mermaid diagram you changed and check the syntax: matching brackets, quoted labels, and valid arrows.
 - Set the "Last updated" line to today's date, only if this run changed the file.
+
+---
+
+## Step 4: Update `model-reference.md`
+
+- Add new models to the table under the correct provider, using the same column format and a one-line summary in the same style. Add a model only if GitHub Copilot Pro offers it.
+- For deprecated models, add the shutdown date to the summary. Remove models that have already shut down, and remove models that Copilot Pro no longer offers even if the provider still serves them.
+- Update context, prices, and summaries that have changed. Keep prices as $ per 1M tokens. Use "—" only for values that do not exist or were never found. Mark unconfirmed values "(unverified)" as described in Step 1.
+- Recalculate the Cost ratings when any price changes. Rate each model by input plus output price, from "Lowest" for the cheapest model to "Highest" for the most expensive, scaled on a log scale in between. Leave a model unrated ("—") if it has no usable price.
+- In the use-case table, fill High, Medium, and Low from the Cost ratings of the models in each row. Recalculate a row only when a model in it was added, removed, or changed price. Otherwise leave it alone. Rows match the phases in `workflow.md`. If a phase is added, removed, or renamed, update the matching row, pick its High, Medium, and Low models from the models that phase names, and list those picks in your report.
+- Set the "Last updated" line to today's date, only if this run changed the file.
+- Do not create files that links point to. Report any link in `model-reference.md` whose target file does not exist.
 
 ---
 
@@ -75,6 +76,7 @@ Check the Mermaid diagrams, phase tables, the assignment matrix (section 4), the
 
 - Every model named in `workflow.md` is either in `model-reference.md` or listed under the "Models not used in this workflow" list in `workflow.md` (section 4).
 - Every model named in the use-case table in `model-reference.md` exists in the Models table.
+- Every row in the Use cases table matches a phase heading in `workflow.md`, and every phase in `workflow.md` has a row.
 - The tiers in section 8 match `model-reference.md`: every model named in a tier has a row in `model-reference.md`, and every tier model appears in the assignment matrix (section 4) or the escalation ladder (section 5).
 - The escalation ladder in section 5 uses current models.
 - Each datasheet in `data/models/` matches `model-reference.md` for context and prices.

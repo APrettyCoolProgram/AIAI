@@ -4,15 +4,20 @@
 
 | Use case | High | Medium | Low |
 |---|---|---|---|
-| Large C# refactors, architecture | Claude Fable 5.2 | Claude Opus 5.5 | GPT-6.1 Sol |
-| Routine refactors, code review | Claude Sonnet 5.5 | — | GPT-6.1 Terra |
-| XML doc comments and manuals | Claude Sonnet 5.5 | GPT-6.1 Terra | Gemini 3.8 Flash |
-| Bulk doc generation across a repo | MAI-Code-1.1-Flash | — | Claude Haiku 5.5 or GPT-6 Luna |
-| Repo hygiene and build scripting | Grok 4.7 | — | GPT-6.1 Terra |
-| Vibe-coding experiments | Kimi K3 | Gemini 3.8 Flash | MAI-Code-1.1-Flash |
-| Analysis of a code block | Claude Opus 5.5 | Claude Sonnet 5.5 | Claude Haiku 5.5 |
-| Analysis of class | Claude Opus 5.5 | Claude Sonnet 5.5 | GPT-6.1 Terra |
-| Analyze a solution | Claude Opus 5.5 | Kimi K3 | Gemini 3.8 Flash |
+| 3.1 Planning and design | Claude Fable 5.2 | Claude Opus 5.5 | GPT-6.1 Sol |
+| 3.2 Implementation | Claude Opus 5.5 | — | Claude Sonnet 5.5 or GPT-6.1 Sol |
+| 3.3 Refactoring | Claude Opus 5.5 | — | Claude Haiku 5.5 or GPT-6 Luna |
+| 3.4 Unit tests | Claude Sonnet 5.5 | — | GPT-6.1 Terra |
+| 3.5 XML documentation and code comments | Claude Sonnet 5.5 | — | Claude Haiku 5.5 |
+| 3.6 Technical documentation and user manuals | Claude Opus 5.5 | — | GPT-6.1 Terra |
+| 3.7 Code review | GPT-6.1 Sol | — | Gemini 3.8 Flash |
+| 3.8 Repository hygiene | GPT-6.1 Terra | — | Claude Haiku 5.5 |
+| 3.9 Migrating .NET Framework 4.8 to .NET 10 | Claude Fable 5.2 | Claude Opus 5.5, GPT-6.1 Sol, Claude Sonnet 5.5, MAI-Code-1.1-Flash | Claude Haiku 5.5 |
+| 3.10 Vibe-coding experiments | Kimi K3 | Gemini 3.8 Flash | MAI-Code-1.1-Flash |
+
+Rows match the phases in `workflow.md`. High, Medium, and Low list the most expensive, middle, and least expensive models in each row, by Cost rating. Ties are joined with "or", and several middle models with commas. "—" means no model fills that position.
+
+---
 
 ## Models
 
